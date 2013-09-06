@@ -1,0 +1,137 @@
+body{
+	margin:0;
+	padding:0;
+	height:100%;
+	position:absolute;
+	width:100%;
+	overflow:hidden;
+	font-family: geneva;
+}
+#lens{
+	margin:0;
+	padding:0;
+	width:300px;
+	height:180px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-90px;
+	margin-left:-150px;
+}
+#space{
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	background: url("../img/space.jpg") black 0 0 repeat;
+}
+.frame{
+	border:solid 1px green;
+	width:300px;
+	height:180px;
+	position:absolute;
+	top:0;
+	left:0
+}
+
+/* solar */
+
+#f01{
+	background:url("../img/Earth.png") transparent center center no-repeat;
+}
+#f02{
+	background:url("../img/Mars.png") transparent center center no-repeat;
+}
+#f03{
+	background:url("../img/Jupiter.png") transparent center center no-repeat;
+}
+#f04{
+	background:url("../img/Ceres.png") transparent center	 center no-repeat;
+}
+
+.frame#f01 .travel {
+  color: gray;
+  font-size: 40px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  margin-top: -60px;
+  position: absolute;
+  right: 200px;
+  text-decoration: none;
+  top: 50%;
+}
+.frame#f01 .travel.toJupiter{
+	margin-top: -20px;
+}
+.frame#f01 .travel.toCeres{
+	margin-top: 30px;
+}
+.frame .gohome {
+  color: gray;
+  font-size: 40px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  left: 200px;
+  text-decoration: none;
+  top: 50%;
+}
+
+.frame#f03 .gohome{
+	right:200px;
+	left:auto;
+}
+
+#modal{
+	display:none;
+	border:solid 32px rgba(20, 20, 20, 0.7);
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-72px 0 0 -232px;
+	z-index:9999;
+}
+#modal p{
+	background-color:#eeeeee;
+	width:400px;
+	height:80px;
+	color:#333;
+	padding:0;
+	margin:0;
+	padding:20px;
+}
+#overlay{
+	display:none;
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:9998;
+	opacity:0.8;
+	background-color:black;
+}
+#loader{
+	width:32px;
+	height:32px;
+	background-co
+}
+
+i.ico {
+	display: block;
+	font-size: 15px;
+	font-style: normal;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	width: 32px;
+	float:left;
+	cursor:pointer;
+}
+i.ico.closeModal {
+	background-color: rgba(30, 30, 30, 0.5);
+	color: #333333;
+	margin-top:-32px;
+	float:right;
+}
