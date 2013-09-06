@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+
+  <!--
+            Remember! This versione not have img folder.
+            For see all image please download the example ZIP from here: http://simoneluise.it/jq/plugin/space.zip
+  -->
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Simple jQuery Space Example</title>
+	<meta name="author" content="simone luise">
+	
+	<link rel="stylesheet" href="css/space.css" type="text/css" media="screen" charset="utf-8">
+	<script type="text/javascript" src="js/jq.js"></script>
+	<script type="text/javascript" src="js/jquery.space.js"></script>
+	<script type="text/javascript">
+		$(window).on('load', function(){
+			$("#space").space({
+				frms : {
+					f01 : [2,2],
+					f02 : [4,2],
+					f03 : [0,2],
+					f04 : [0,0]
+				}
+			});	
+		})
+	</script>
+	
+</head>
+<body>
+	<div id="lens">
+		<div id="space">
+			<div class="frame" id="f01">
+				<a href="#!/goMars" class="travel toMars" rel="f02">Go Mars</a>
+				<a href="#!/goJupiter" class="travel toJupiter" rel="f03">Go Jupiter</a>
+				<a href="#!/goCeres" class="travel toCeres" rel="f04">Go Xx</a>
+			</div>
+			<div class="frame" id="f02">
+				<a href="#!/goHome" class="travel gohome" rel="f01">Go Earth</a>
+			</div>
+			<div class="frame" id="f03">
+				<a href="#!/goHome" class="travel gohome" rel="f01">Go Earth</a>
+			</div>
+			<div class="frame" id="f04">
+				<a href="#!/goHome" class="travel gohome" rel="f01">Go Earth</a>
+			</div>
+		</div>
+	</div>
+	<div id="modal"></div>
+	<div id="loader"></div>
+	<div id="overlay" style="display: none;"></div>
+</body>
+</html>
